@@ -12,6 +12,7 @@
   --dark1: #252432;
   --dark2: #25243280;
   --dark3: #00000080;
+  --bluebg: #4e47ff1a;
   --footcolor: #8987a1;
   --Raleway: "Raleway", sans-serif;
 }
@@ -81,3 +82,44 @@ a {
 header {
   background-image: url("/Assets/Hero-bg.png");
 }
+
+/* preview section */
+
+.preview-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-text {
+  width: 517px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 23px;
+  flex-shrink: 0;
+  font-family: var(--Raleway);
+  border: 2px solid green;
+}
+
+.preview-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark1);
+}
+
+.preview-description {
+  color: var(--dark2);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.preview-text button {
+  max-width: max-content;
+}
+
+.preview-sec img {
+  border-radius: 48px;
+}
+
+/* Metrics section */
