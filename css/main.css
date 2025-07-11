@@ -13,7 +13,13 @@
   --dark2: #25243280;
   --dark3: #00000080;
   --bluebg: #4e47ff1a;
+  --mainbg: #f5f8ff;
+  --borderbg: #f2eded;
   --footcolor: #8987a1;
+  --cardbg: #ffffff80;
+  --cardthd:#1E1E1E;
+  --reviewertt:#757575;
+  --reviewerft:#B3B3B3;
   --Raleway: "Raleway", sans-serif;
 }
 
@@ -83,6 +89,10 @@ header {
   background-image: url("/Assets/Hero-bg.png");
 }
 
+main {
+  background-color: var(--mainbg);
+}
+
 /* preview section */
 
 .preview-sec {
@@ -145,7 +155,7 @@ header {
   gap: 158px;
 }
 
-.metrics-item h2{
+.metrics-item h2 {
   color: var(--blue);
   font-size: 80px;
   font-weight: 700;
@@ -156,4 +166,76 @@ header {
   color: var(--dark3);
   font-weight: 400;
   font-size: 20px;
+}
+
+/* Rating section */
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.rating-title {
+  text-align: center;
+  color: var(--dark1);
+  font-family: var(--Raleway);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  min-width: 240px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 14px;
+  background-color: var(--cardbg);
+  border: 1px solid var(--borderbg);
+  gap: 24px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color:var(--cardthd);
+}
+
+.card-des {
+  color: var(--cardthd);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.user {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.reviewer-name {
+  color: var(--reviewertt);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review h5 {
+  color: var(--reviewerft);
+  font-size: 16px;
+  font-weight: 400;
+
 }
