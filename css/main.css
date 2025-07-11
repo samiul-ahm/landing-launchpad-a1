@@ -47,6 +47,10 @@ body {
   border: none;
 }
 
+.btn-primary:hover{
+  background-color: red;
+}
+
 main {
   background-color: var(--mainbg);
 }
