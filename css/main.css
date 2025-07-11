@@ -237,5 +237,35 @@ main {
   color: var(--reviewerft);
   font-size: 16px;
   font-weight: 400;
-
 }
+
+/* studio section */
+
+.studio {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  padding: 71px 150px;
+  gap: 20px;
+  border-radius: 14px;
+}
+
+.studio-title {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--Raleway);
+}
+
+.studio-des {
+  color: var(--dark3);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.studio img {
+  border-radius: 48px;
+}
+
