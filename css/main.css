@@ -17,9 +17,10 @@
   --borderbg: #f2eded;
   --footcolor: #8987a1;
   --cardbg: #ffffff80;
-  --cardthd:#1E1E1E;
-  --reviewertt:#757575;
-  --reviewerft:#B3B3B3;
+  --cardthd: #1e1e1e;
+  --reviewertt: #757575;
+  --reviewerft: #b3b3b3;
+  --formbd: #d6dded;
   --Raleway: "Raleway", sans-serif;
 }
 
@@ -212,7 +213,7 @@ main {
 .card-title {
   font-size: 24px;
   font-weight: 600;
-  color:var(--cardthd);
+  color: var(--cardthd);
 }
 
 .card-des {
@@ -245,7 +246,7 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   padding: 71px 150px;
   gap: 20px;
@@ -269,3 +270,76 @@ main {
   border-radius: 48px;
 }
 
+/* Contact  */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 71px 0;
+}
+
+.contact-title {
+  font-family: var(--Raleway);
+  width: 528px;
+  color: #000;
+  font-size: 97px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  width: 497px;
+}
+
+.form, .label, .textarea {
+  font: inherit;
+}
+
+.label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dark3);
+  border-radius: 10px;
+  padding: 20px 32px;
+  background-color: #fff;
+  border: 1px solid #d6dded;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+  margin-bottom: 19px;
+}
+
+.textarea {
+  color: var(--dark3);
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 32px;
+  border: 1px solid var(--borderbg);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 10px;
+  height: 135px;
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+}
